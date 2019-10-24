@@ -55,13 +55,19 @@ class GameFragment : Fragment() {
             Question(text = "Registers app with launcher?",
                     answers = listOf("intent-filter", "app-registry", "launcher-registry", "app-launcher")),
             Question(text = "Mark a layout for Data Binding?",
-                    answers = listOf("<layout>", "<binding>", "<data-binding>", "<dbinding>"))
+                    answers = listOf("<layout>", "<binding>", "<data-binding>", "<dbinding>")),
+            Question(text = "Which language should Android developer use?",
+                    answers = listOf("Java/Kotlin", "PHP", "Python", "Perl")),
+            Question(text = "In which format are Android apps packed?",
+                    answers = listOf(".apk", ".app", ".and", ".avg")),
+            Question(text = "Is the author of this app the coolest?",
+                    answers = listOf("heck yes!", "no!", "sike!", "only in their dream!"))
     )
 
     lateinit var currentQuestion: Question
     lateinit var answers: MutableList<String>
     private var questionIndex = 0
-    private val numQuestions = Math.min((questions.size + 1) / 2, 3)
+    private val numQuestions = Math.min((questions.size + 1) / 2, 4)
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
