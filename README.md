@@ -21,7 +21,7 @@ The following **required** functionality is complete:
 
 The following **additional** features are implemented:
 
-* [ ] Add new questions to the trivia game.
+* [X] Add new questions to the trivia game.
 * [ ] Add new categories to the trivia game.
 * [ ] Add new animations.
 
@@ -29,11 +29,12 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='name_of_file.gif' title='Android Trivia animated demo' alt='Android Trivia demo' />
+<img src='AndroidTrivia.gif' title='Android Trivia animated demo' alt='Android Trivia demo' />
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+I had hard time with passing safe arguments and some trouble understanding intent.
 
 ## License
 
