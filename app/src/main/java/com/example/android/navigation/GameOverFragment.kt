@@ -35,6 +35,9 @@ class GameOverFragment : Fragment() {
         binding.tryAgainButton.setOnClickListener(
                 Navigation.createNavigateOnClickListener(GameOverFragmentDirections.actionGameOverFragmentToGameFragment())
         )
+        val args = GameOverFragmentArgs.fromBundle(arguments!!)
+        Toast.makeText(context, "NumCorrect: ${args.numCorrect}, NumQuestion: ${args.numQuestions}", Toast.LENGTH_LONG).show()
+
         return binding.root
     }
 }
